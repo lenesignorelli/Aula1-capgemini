@@ -15,14 +15,23 @@
         <input type="tel" name="tel" placeholder="(xx) xxxx-xxxx" /><br />
         <input type="number" name="idade" placeholder="Idade" /><br />
         <input type="url" name="Linkedin" placeholder="Linkedin" /><br />
-        <input type="range" name="urgencia" min="0" max="100" step="0.1" /><br />
+        Urgência: <input type="range" name="urgencia" min="0" max="100" step="0.1" /><br />
         <input type="checkbox" name="dia da semana" value="2" /> Segunda feira <br />
         <input type="checkbox" name="dia da semana" value="4" /> Quarta feira <br />
         <input type="checkbox" name="dia da semana" value="6" /> Sexta feira <br />
         <input type="radio" name="horário" value="manhã" /> Manhã <br />
         <input type="radio" name="horário" value="tarde" /> Tarde <br />
         <input type="radio" name="horário" value="noite" /> Noite <br />
-        <textarea cols="30" rows="10"></textarea>
+        <textarea name="mensagem" cols="30" rows="10"></textarea><br />
+        Cidade: <input list="cidade" name="cidade" /> <!--responsável por receber valores do datalist, quando digito uma letra, mostra as opções-->
+        <datalist id="cidade">
+            <option value="Blumenau">Blumenau</option>
+            <option value="Florianópolis">Flonópish</option>
+            <option value="Joinville">Joinville</option>
+        </datalist><br />
+        <button type="button">Outra ação</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar mensagem</button>
     </form>
 </body>
 </html>
